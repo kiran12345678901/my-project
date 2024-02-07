@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup for vendor </title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        main{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url(./191757.jpg);
+            
+        }
+        .block{
+            height: 80%;
+            width: 40%;border: 2px solid rgb(150, 150, 141);
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            flex-direction: column;
+            float: right;
+            border-radius: 20px;
+            /* background:blur(2px); */
+            backdrop-filter: blur(10px);
+
+
+        }
+        .block2{
+            height: 80%;
+            width: 100%;
+            /* background-color: aliceblue; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            float: left;
+        }
+        .block1{
+            height: 20%;
+            width: 100%;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: antiquewhite; */
+        }
+        input{
+            text-decoration: none;
+
+            background: none;
+            border-bottom: 2px solid rgb(118, 115, 115);
+            /* float: right; */
+            color: white;
+            width: 90%;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid whitesmoke;
+
+            
+        }
+        .sec1{
+            font-size:xx-large ;
+            color: rgb(226, 6, 6);
+            text-align: center;
+        }
+        .sec2{
+            color: rgb(230, 5, 57);
+            font-size:x-large ;
+
+        }
+        .sec3,.sec4,.sec5,.sec6,.sec7{
+            color: rgb(160, 59, 59);
+
+display: flex;
+justify-content: left;
+align-items: flex-start;
+font-size: 21px;
+        }
+        .button{
+            font-size: larger;
+            color: blue;
+            background-color: rgb(147, 147, 96);
+            /* background-color: rgb(148, 85, 85); */
+            width: 40%;
+            height: 50px;
+            box-shadow: 0 0 2px rgb(208, 105, 184),0 0 25px rgb(208, 105, 184);
+            border-radius: 20px;
+            cursor: pointer;
+
+        }
+        .button:hover{
+            color: black;
+            /* background-color: white; */
+            box-shadow: 0 0 2px rgb(237, 86, 86),0 0 25px rgb(237, 86, 86),0 0 50px rgb(208, 105, 184),0 0 100px rgb(208, 105, 184),0 0 200px rgb(208, 105, 184);
+
+        }
+        li{
+            color: rgb(203, 134, 249);
+            list-style: none;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="block">
+            <div class="block2">
+            <section class="sec1">
+                SIGNUP
+            </section><br>
+            <u class="sec2">
+                Fill your details
+            </u><br>
+            <section class="sec3">First Name:</section>
+            <input type="text"><br>
+            <section class="sec4">Last Name:</section>
+            <input type="text"><br>
+            <section class="sec5">Phone no:</section>
+            <input type="text"><br>
+            <section class="sec6">Create Password:</section>
+            <input type="password"><br>
+            <section class="sec7">Confirm Password:</section><br>
+            <input type="password"><br><br>
+           <a href="./login.html"> <li>Back To LoginPage</li></a>
+        </div>
+        <div class="block1">
+           <input type="button" value="SignUp" class="button">
+
+        </div>
+    </div>
+
+
+
+    </main>
+</body>
+</html>

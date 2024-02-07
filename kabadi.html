@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket</title>
+    <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit); */
+}
+.home{
+    /* background-color: antiquewhite; */
+    height: 100vh;
+    width: 100%;
+    
+}
+.navigationbar{
+    height: 10%;
+    width: 100%;
+    background-color: black;
+   
+    display: flex;
+}
+.ul1{
+    height: 100%;
+    width: 70%;
+    /* background-color: rgb(161, 179, 179); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}.ul2 a {
+    position: relative;
+    font-size: 1.1em;
+    padding: 6px 20px;
+    transition: .5s;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.ul2 a:hover{
+    color: aqua;
+}
+.ul2 a ol{
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    /* width: 100%;
+    height: 100%; */
+    /* z-index: -1; */
+    border-bottom: 2px solid rgb(185, 221, 92);
+    border-radius: 15px;
+    /* transform: scale(0) translateY(50px); */
+    opacity: 1;
+    transition: .5s;
+    cursor: pointer;
+    color: white;
+
+
+}
+.ul2 a:hover ol{
+    /* transform: scale(1) translateY(0); */
+    opacity: 1;
+    color: aqua;
+
+}
+.olnavbar1{
+    height: 100%;
+    width: 5%;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+
+    /* opacity: 0; */
+}
+.asnav{
+    height: 325%;
+    width: 570%;
+    top: 120px;
+    left: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: inline-block;
+    background-color: aqua;
+    opacity: 0;
+    display: block;
+    border: 2px solid black;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    color: black;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+i{
+    
+    display: block;
+    border: 2px solid black;
+    font-size: xx-large;
+    border: none;
+    border-top: 2px solid black;
+
+    
+
+
+}
+.ilast{
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ border: none;
+ border-top: 2px solid black;
+
+ 
+ /* border-start-end-radius: none; */
+
+}
+.ifirst{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+   
+   }
+.olnavbar1 .asnav:hover {
+    opacity: 0.5;
+}
+.olnavbar2{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    /* align-items: center; */
+text-align: left;   
+   
+}
+img{
+    height: 90%;
+    width: 80%;
+}
+label{
+    color: white;
+    font-size: x-large;
+}
+span{
+    color: aqua;
+    font-size: xx-large;
+}
+
+.olnavbar3{
+    height: 100%;
+    width: 45%;
+    color: rgb(12, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    
+}
+.input1{
+    height: 40%;
+    width: 70%;
+    border-radius: 30px;
+}
+.ul2{
+    height: 100%;
+    width: 30%;
+    /* background-color: aquamarine; */
+     font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} 
+/*.ul2ol1,.ul2ol2,.ul2ol3{
+color: white;
+} */
+
+.alogin{
+    text-decoration: none;
+}
+.sec{
+    height: 120%;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+.div1,.div2{
+height: 50%;width: 100%;
+/* background-color: azure; */
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.ul11,.ul12,.ul13,.ul14{
+    height: 90%;
+    width: 20%;
+    /* background-color: aqua; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    /* box-shadow: 0 0 2px rgb(78, 58, 58),0 0 4px rgb(78, 58, 58),0 0 6px rgb(78, 58, 58),0 0 8px rgb(78, 58, 58); */
+
+}
+.ul11:hover{
+    scale: 1.04;
+    transition: .5s;
+    box-shadow: 0 0 2px rgb(78, 58, 58),0 0 4px rgb(78, 58, 58),0 0 6px rgb(78, 58, 58),0 0 8px rgb(78, 58, 58);
+
+}.ul12:hover{
+    box-shadow: 0 0 2px rgb(78, 58, 58),0 0 4px rgb(78, 58, 58),0 0 6px rgb(78, 58, 58),0 0 8px rgb(78, 58, 58);
+    scale: 1.04;
+    transition: .5s;
+
+}.ul13:hover{
+    box-shadow: 0 0 2px rgb(78, 58, 58),0 0 4px rgb(78, 58, 58),0 0 6px rgb(78, 58, 58),0 0 8px rgb(78, 58, 58);
+    
+    scale: 1.04;
+    transition: .5s;
+}
+.ul14:hover{
+    box-shadow: 0 0 2px rgb(78, 58, 58),0 0 4px rgb(78, 58, 58),0 0 6px rgb(78, 58, 58),0 0 8px rgb(78, 58, 58);
+    scale: 1.04;
+    transition: .5s;
+}
+/* .img1:hover{
+    scale: 1.05;
+    transition: .5s;
+} */
+aside:hover{
+    box-shadow: 0 0 2px rgb(78, 58, 58),0 0 4px rgb(78, 58, 58),0 0 6px rgb(78, 58, 58),0 0 8px rgb(78, 58, 58);
+}
+.oi1{
+    height: 70%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.imgproduct{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.imgproduct:hover{
+    scale: 1.01;
+    transition: .5s;
+
+}
+.oi2{
+    height: 10%;
+    width: 100%;
+    /* background-color: rgb(242, 245, 244); */
+}
+.oi3{
+    height: 20%;
+    width: 100%;
+    /* background-color: rgb(191, 34, 34); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+aside{
+    height: 70%;
+    width: 35%;
+    background-color: aliceblue;
+    border-radius: 20px;
+display: flex;    font-size: xx-large;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+.span1{
+    color: rgb(70, 173, 70);
+    font-size: large;
+}
+    </style>
+    <script>
+        function addToCart() {
+            alert('Product added to cart!');
+            // You can add more logic here to handle actual cart functionality
+        }</script>
+</head>
+<body>
+    <main class="home">
+        <nav class="navigationbar">
+            <ul class="ul1">
+                <ol class="olnavbar1">&#9776;
+                    <aside class="asnav">
+                        <a href="./cricket.html"> <i class="ifirst">Cricket</i></a>
+                        <a href="./footbal.html"> <i>FootBall</i></a>
+                        <a href="./kabadi.html"> <i>Kabadi</i></a>
+                         <a href="./hockey.html"><i>Hockey</i></a>
+                         <i class="ilast">BaseBall</i>
+                         <i class="ilast">BasketBall</i>
+         
+                     </aside>
+                </ol>
+                <ol class="olnavbar2">
+                    <ol class="olimg">
+                    <img src="./logo-website-website-tools-design-website-name-logo-posters-and-25.png" alt="" height="100%" width="80%">
+                </ol>
+                <ol>
+                    <label>GO <br><span>Sports</span></label>
+                    </ol>
+                </ol>
+                <ol class="olnavbar3">
+                    <input type="text" class="input1" placeholder="search here"> &#128269;
+        
+                </ol>
+            </ul>
+            <ul class="ul2">
+               <a href="./myproject.html"> <ol> <br>Home</ol></a>
+                <a class="alogin" href="./login.html"><ol> <br> Account</ol></a>
+                <!-- <a href="./cart.html"><ol>&#xF242; <br> Cart</ol></a> -->
+            </ul>
+        </nav>
+        <section class="sec">
+<div class="div1">
+    <ul class="ul11">
+        <ol class="oi1"><img class="imgproduct" src="./jercy.webp" alt="" height="100%" width="100%"></ol>
+        <ol class="oi2">Whit Jerscy <span class="span1">15%off</span>  <br>
+            999/-</ol>
+        <ol class="oi3">
+            <aside onclick="addToCart()">+Cart</aside>
+        </ol>
+    </ul>
+    <ul class="ul12">
+        <ol class="oi1"><img class="imgproduct" src="./jercy2.webp" alt="" height="100%" width="100%"></ol>
+        <ol class="oi2">Red Jerscy<span class="span1">5%off</span>  <br>
+            899/-</ol>        <ol class="oi3">
+            <aside onclick="addToCart()">+Cart</aside>
+        </ol>
+    </ul>
+    <ul class="ul13">
+        
+        <ol class="oi1">
+            <img class="imgproduct" src="./kabadi 1.webp" alt="" height="100%" width="100%"></ol>
+        <ol class="oi2">
+            Knee Anthlets <span class="span1">48%off</span>  <br>
+            469/-
+        </ol>
+        <ol class="oi3">
+            <aside onclick="addToCart()">+Cart</aside>
+        </ol>
+    </ul>
+    <ul class="ul14">
+        <ol class="oi1"><img class="imgproduct" src="./kabadi jercy.webp" alt="" height="100%" width="100%"></ol>
+        <ol class="oi2">
+            Indian Jerscy <span class="span1">22%off</span>  <br>
+            398/-
+        </ol>        <ol class="oi3">
+            <aside onclick="addToCart()">+Cart</aside>
+        </ol>
+    </ul>
+</div>
+<div class="div2">
+    <ul class="ul11">
+        <ol class="oi1"><img class="imgproduct" src="./kabadishoe.jpg" alt="" height="100%" width="100%"></ol>
+        <ol class="oi2">
+        Blue Kabadi Shoes <span class="span1">34%off</span>  <br>
+            1,398/-
+        </ol>        <ol class="oi3">
+            <aside onclick="addToCart()">+Cart</aside>
+        </ol>
+    </ul>
+    <ul class="ul12">
+        <ol class="oi1"><img class="imgproduct" src="./kabadi2.webp" alt="" height="100%" width="100%"></ol>
+        <ol class="oi2">
+            Knee Anthlet <span class="span1">32%off</span>  <br>
+            1,499/-
+        </ol>        <ol class="oi3">
+            <aside onclick="addToCart()">+Cart</aside>
+        </ol>
+    </ul>
+    <ul class="ul13">
+        <ol class="oi1"><img class="imgproduct" src="./shoe1.jpg" alt="" height="100%" width="100%"></ol>
+        <ol class="oi2">
+             White shoe <span class="span1">15%off</span>  <br>
+            569/-
+        </ol>        <ol class="oi3">
+            <aside onclick="addToCart()">+Cart</aside>
+        </ol>
+    </ul>
+    <ul class="ul14">
+        <ol class="oi1"><img class="imgproduct" src="./kabadi kit.jpg" alt="" height="100%" width="100%"></ol>
+        <ol class="oi2">
+            repair Kit<span class="span1">48%off</span>  <br>
+            1,269/-
+        </ol>        <ol class="oi3">
+            <aside onclick="addToCart()">+Cart</aside>
+        </ol>
+    </ul>
+</div>
+
+        </section>
+    </main>
+</body>
+</html>
